@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD Dice Roller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>DnD Dice Roller</h1>
+        <div class="dice-buttons">
+            <button class="dice-btn" onclick="rollDice(4)">Roll D4</button>
+            <button class="dice-btn" onclick="rollDice(6)">Roll D6</button>
+            <button class="dice-btn" onclick="rollDice(8)">Roll D8</button>
+            <button class="dice-btn" onclick="rollDice(10)">Roll D10</button>
+            <button class="dice-btn" onclick="rollDice(12)">Roll D12</button>
+            <button class="dice-btn" onclick="rollDice(20)">Roll D20</button>
+        </div>
+        <div class="advantage">
+            <input type="checkbox" id="advantage" />
+            <label for="advantage">Advantage</label>
+        </div>
+        <div class="result-container">
+            <div class="rolling-dice" id="rollingDice">🎲</div>
+            <p class="result" id="diceResult">0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

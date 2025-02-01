@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.dice-buttons {
+    margin-top: 30px;
+}
+
+.dice-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.dice-btn:hover {
+    background-color: #0056b3;
+}
+
+.advantage {
+    margin-top: 20px;
+}
+
+.advantage label {
+    font-size: 18px;
+    color: #fff;
+}
+
+.result-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rolling-dice {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.result {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
